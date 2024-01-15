@@ -1,4 +1,4 @@
-FROM alpine AS build
+FROM alpine:3.18.5 AS build
 RUN apk add g++ make expat expat-dev zlib-dev lz4-dev bash
 COPY build.sh ./build.sh
 RUN ./build.sh
